@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI — Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>GTA VI — Trophy Guide &amp; Tracker</h1>
+    <p class="sub">Grand Theft Auto VI · PlayStation 5 · 55 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze · 28 hidden · 0 online · all single-player</p>
+  </div>
+  <div class="progress" id="progressBox" aria-label="Progress">
+    <div class="big" id="progressText">0 / 55 earned</div>
+    <div class="bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+    <div class="grades" id="gradeCounts"></div>
+  </div>
+</header>
+
+<p class="honesty"><strong>Honest guide:</strong> GTA VI is unreleased, so no guide can be confirmed in-game yet. Every trophy below has a guide in our own words with its sources named beside it. Where a step comes from an analogous GTA V / GTA Online mechanic it is labelled <em>by analogy — unconfirmed for VI</em>. Five hidden trophies are still unsolved by every cited source, and this guide says so instead of inventing a method.</p>
+
+<section id="roadmap" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum — Vice Got a Price!</h2>
+  <p class="roadmap-intro">PowerPyx rates the platinum 4/10 and about 200 hours in one playthrough. There are no difficulty settings, no mission replay and no New Game+. Cheats disable trophies and saving, so keep them off your platinum save.</p>
+  <div id="roadmapStages"></div>
+  <div class="warnings">
+    <p><strong>⚠ The one trophy you can miss:</strong> <span class="missable">MISSABLE</span> Positive Mental Attitude — meditate at every spot. Do the balcony meditation with Lucia at Jason's house in Chapter 1, after the mission Down to Earth. It cannot be done again after Chapter 1.</p>
+    <p><strong>Saves:</strong> 15 manual slots + 1 autosave. Keep a separate save at the start and end of every chapter — that is 10 slots, and you can rotate the other 5 in free roam after the ending.</p>
+    <p><strong>Avoid:</strong> the Irredeemable criminal profile — it is permanent and makes the police more aggressive.</p>
+  </div>
+</section>
+
+<section class="controls" aria-label="Tracker controls">
+  <div class="row">
+    <label class="search">Search <input id="search" type="search" placeholder="Trophy name or description…" autocomplete="off"></label>
+    <label>Grade
+      <select id="grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="check"><input id="spoilers" type="checkbox" checked> Hide story spoilers until earned</label>
+    <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
+  </div>
+  <div class="row filters" id="kindFilters" role="group" aria-label="Filter by kind"></div>
+  <div class="row">
+    <button id="export" type="button">Export progress (.json)</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+    <button id="reset" type="button">Reset progress</button>
+    <span class="saved" id="savedNote">Progress saves in this browser (localStorage).</span>
+  </div>
+</section>
+
+<p class="count" id="countLine"></p>
+<p class="howto">How to use it: tick a trophy when you earn it in-game — it stays ticked in this browser. Open “Guide + sources” on any card for the method and where it comes from. Use the kind filters to plan a session (say, all robberies), and the spoiler switch to hide the story trophies until you earn them.</p>
+<main id="list" aria-label="Trophy checklist"></main>
+<p class="empty" id="emptyNote" hidden>No trophies match these filters. Try clearing the search or choosing another kind — the Online filter is empty on purpose: all 55 trophies are single-player, there are no online trophies.</p>
+
+<footer>
+  <h2>Sources</h2>
+  <p>Official names, descriptions and grades: the list as Exophase and PSNProfiles published it, cross-checked by PlanetGTA6 and GTADB (27 visible + 28 hidden). Conditions, counts and tips: PowerPyx's GTA 6 Trophy Guide &amp; Roadmap, cross-checked with GameMapa, Push Square, KeenGamer, Mobalytics, Insider Gaming and GTASpotter. Analogous GTA V mechanics: PixelForge's GTA 5 100% checklist, Neoseeker's GTA V guide and GameTree's GTA 5 guide. Each trophy names its own sources beside its guide. No Rockstar logo or artwork is used anywhere in this guide.</p>
+  <p class="fine">Offline app: everything it loads is a file in this folder. Your checklist never leaves this browser except when you export it yourself.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
